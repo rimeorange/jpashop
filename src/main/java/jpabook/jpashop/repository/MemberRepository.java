@@ -19,7 +19,7 @@ public class MemberRepository {
     }
 
     public Member findOne(Long id) {
-        Member member = em.find(Member.class, id);
+        return em.find(Member.class, id);
     }
 
     public List<Member> findAll() {
